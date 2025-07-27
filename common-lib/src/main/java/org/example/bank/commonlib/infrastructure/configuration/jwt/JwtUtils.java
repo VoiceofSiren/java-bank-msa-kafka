@@ -1,4 +1,4 @@
-package org.example.apigateway.infrastructure.configuration;
+package org.example.bank.commonlib.infrastructure.configuration.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -64,6 +64,11 @@ public class JwtUtils {
 
     public Boolean expires(String token) {
         return extractPayload(token).getExpiration().before(new Date());
+    }
+
+    public Boolean isValid(String token) {
+        return (getCategoryFrom(token) != null && getUsernameFrom(token) != null && getRoleFrom(token) != null
+        && !expires(token));
     }
 
 }

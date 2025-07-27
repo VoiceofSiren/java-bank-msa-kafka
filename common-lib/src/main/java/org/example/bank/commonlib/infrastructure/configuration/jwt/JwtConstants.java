@@ -1,4 +1,4 @@
-package org.example.apigateway.infrastructure.configuration;
+package org.example.bank.commonlib.infrastructure.configuration.jwt;
 
 public class JwtConstants {
 

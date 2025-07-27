@@ -1,1 +1,6 @@
 rootProject.name = 'bank-root'
+
+include 'eureka-server'
+include 'common-lib'
+include 'api-gateway'
+include 'user-service'
