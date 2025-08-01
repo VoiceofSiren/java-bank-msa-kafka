@@ -1,7 +1,7 @@
 package org.example.bank.commonlib.domain.model;
 
 import lombok.Getter;
-import org.example.apigateway.infrastructure.configuration.jwt.JwtConstants;
+import org.example.bank.commonlib.infrastructure.configuration.jwt.JwtConstants;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
